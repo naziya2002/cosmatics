@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Makeup-hub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- fontawesom cdn link -->
+    <link href="https://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/favicon.ico" rel="shortcut icon"
+        type="image/x-icon">
+    <!-- font -->
+
+</head>
+
+<body>
+
+    <div class="top-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 mt-2">
+                    <ul>
+                        <li><a href="cosmmain.html">Home</a></li>
+                        <li><a href="cosmcheckout.html">Delivery</a></li>
+                        <li><a href="cosmcart.html">Payment</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-5 mt-2 ">
+                    <h6><i class="fas fa-phone-alt mr-1"></i> +91 70133 22781 </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4" id="top-logo">
+        <div class="row">
+            <div class="col-md-2" style="right: 5%;">
+                <!-- Just an image -->
+                <nav class="navbar navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/WhatsApp Image 2022-04-05 at 20.15.34.jpeg" style="width: 100px;height: 100px;">
+
+                    </a>
+                </nav>
+            </div>
+            <div class="col-md-7" id="searchbar">
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn" type="button" id="button-addon2"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-2" id="icons">
+           <a href="cosmlogin.html"  >   <div style="cursor: pointer;" class="circle float-right" data-toggle="modal" data-target="#loginModal"
+                    data-toggle="tooltip" data-placement="top" title="LOGIN & SIGNUP"><i
+                        class="fas fa-user "></i></div>
+            </a>
+            <div style="cursor: pointer;" class="circle float-right mr-2" data-toggle="modal" data-target="#cartModal"
+            data-toggle="tooltip" data-placement="top" title="cart"><i class="fas fa-shopping-cart "></i>
+            <sup><span id="count" class="badge badge-danger" style="width: 23px;">!</span></sup>
+        </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container" style="height: 30px;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="height: 30px;">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pl-4" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                            aria-expanded="false"> <span> ≡ All Category</span></a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Women</a>
+                              <a class="dropdown-item" href="#">Men</a>
+                              
+                              <a class="dropdown-item" href="#">Baby</a>
+                              <a class="dropdown-item" href="#">Mom</a>
+                              
+                            </div>
+                          </li>
+                        <li class="nav-item active">
+                      <a class="nav-link" href="#">Makeup <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"> Skin</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Natural</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Mom and Baby</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Health & Wellness </a>
+                      </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Fragrance</a>
+                      </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Hair</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+
+    </div>
+    <hr>
+
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100"
+                        src="images/cosmain1.webp"  height="10"
+                        alt="First slide" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="images/cosmain2.0.jpg"
+                        alt="Second slide" class="img-fluid">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="images/cosmain3.jpg"
+                        alt="Third slide" class="img-fluid">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row mt-4" id="border-line">
+            <div class="col-md-4">
+                <div class="box">
+                    <i class="fas fa-truck fa-2x mb-3 mt-4"></i>
+                    <h5>Fast delivery</h5>
+                    <p>Fast delivery at your doorstep with reasonable pricing </p>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                <div class="box">
+                    <i class="fas fa-truck fa-2x mb-3 mt-4"></i>
+                    <h5>Limited period offer</h5>
+                    <p>Limited time deals for products in-demand,Explore.!</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="box">
+                    <i class="fas fa-truck fa-2x mb-3 mt-4"></i>
+                    <h5>Free delivery</h5>
+                    <p>Free delivery for the first time users when they order for the first time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br> <br>
+
+    <div class="container cardItem" id="products">
+        <!-- <h2>Sneakers</h2> -->
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="images/cosmainpp1.webp"
+                        alt="Card image cap" style="height: 380px; width: 150px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">Maybelline New York Hypercurl Mascara Waterproof, Black, 9.2g</a></p>
+                        <p class="card-cost">₹338</p>
+ 
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3" style="padding-top: 11px;">37,646</label>
+                        </div>
+                        <button class="add-cart">add to cart</button>
+ 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainp1.webp"
+                        alt="Card image cap"style="height: 300px; width: 200px;align-self: center; ">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">SUGAR Cosmetics Smudge Me Not Liquid Mini Lipstick Set | Bold Set, Matte Finish - (Combo | Pack of 4) </a>
+                        <p class="card-cost">₹799</p>
+                    </p><p class="extra-info">Liquid</p>
+                        
+                        <div class="ratings" style="padding-top: 40px;">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3" style="padding-top: 11px;">2,555 reviews</label>
+                        </div>
+                        <button class="add-cart">add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainpp2.webp"
+                        alt="Card image cap" style="height: 310px; width: 200px;align-self: center; ">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">Maybelline Sensational Liquid Matte Minis Pack of 4 - Soft Wine, Best Babe, Bare It All, Strip It Off, 4 Count (Pack of 1)
+                        </a>
+                        <p class="card-cost">₹455</p>
+                    </p><p class="extra-info">Liquid</p>
+                       
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 " style="padding-top: 11px;">9,774</label>
+                        </div>
+                        <button class="add-cart">add to cart</button>
+
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainn1.webp"
+                        alt="Card image cap"style="height: 300px; width: 200px;align-self: center; ">
+                    <div class="card-body">
+                        
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">Just Herbs Ayurvedic Creamy Matte Lipstick Set For Lip Hydrating & Moisturizing, Suitable For All Indian Tones 38gm ( Pack...</a></p>
+                        <p class="card-cost">₹460</p>
+                       
+                        <div class="ratings" style="padding-top: 40px;">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 " style="padding-top: 11px;">9,645</label>
+                        </div>
+                        <button class="add-cart">add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="container cardItem" id="newarrive">
+        <!-- <h2>Sport shoes</h2> -->
+        
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="height: 630px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainp2.webp"
+                        alt="Card image cap" style="height: 380px; width: 150px;padding-top: 25px;align-self: center;">
+                    <div class="card-body" >
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">SUGAR Cosmetics Kohl Of Honour Intense Kajal - 01 Black Out (Single Blister)</a></p>
+                        <p class="cost text-danger mt-2">₹225 <strike class="text-secondary">₹249</strike>
+                        </p><p class="save-off">Save 10%</p>
+                
+                        <div class="ratings" style="padding-top: 15px;">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3" style="padding-top: 11px;">344 reviews</label>
+                        </div>
+                        <button class="add-cart">add to cart</button>
+
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 630px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainpp3.jpg"
+                        alt="Card image cap" style="height: 365px; width: 150px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">RENEE FAB 5 Matte Finish 5 in 1 Lipstick 7.5G</a>
+                        </p>
+                        <p class="card-cost">₹599
+                            <!-- <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i> -->
+                        </p>
+                       
+                       
+                        <p class="extra-info">Stick</p>
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">1,969 reviews</label>
+                        </div>
+                        <button class="add-cart">add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 630px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainp3.webp"
+                        alt="Card image cap" style="height: 380px; width: 150px;padding-top: 130px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">SUGAR Cosmetics - Contour De Force - Face Palette with Lightweight Blush, Highlighter And Bronzer - 01 Subtle Summit - Lo</a>
+                        </p><p class="card-cost">₹719
+                            <!-- <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i> -->
+                        </p><p class="done-deal">Limited time deal</p>
+                        <p class="extra-info">Shimmery</p>
+                        
+                        <div class="ratings" >
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">1,881 reviews</label>
+                        </div>
+                        <button class="add-cart">add to cart</button>
+
+                       </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 630px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainp4.webp"
+                        alt="Card image cap" style="height: 300px; width: 150px;padding-top: 180px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">SUGAR Cosmetics - Dream Cover - Mattifying Compact - 10 Latte (Compact for light tones) - Lightweight Compact with SPF 1</a></p>
+                        
+                        <p class="card-cost">₹449
+                            <!-- <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i> -->
+                        </p>
+                        <p class="extra-info">Light</p>
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">234 reviews</label>
+                        </div>
+                        <button class="add-cart">add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container cardItem" id="recommend">
+        <!-- <div id="heading">
+            <h2>Formal shoes</h2>
+            <button type="button" class="btn btn-outline-primary" id="float">See all</button>
+        </div> -->
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainn2.webp"
+                        alt="Card image cap" style="height: 380px; width: 150px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">Bio - Oil Original Face & Body Oil, suitable for Acne Scar Removal, Pigmentation, Dark Spots & Stretch Marks & Ageing Signs fo...</a></p>
+                        
+                        <p class="card-cost">₹382</p>
+                        <p class="extra-info">Oil</p>
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">124 reviews</label>
+                        </div>
+                        <button class="add-cart">add to cart</button>
+
+                           
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainp5.webp"
+                        alt="Card image cap" style="height: 300px; width: 100px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">SUGAR Cosmetics - Blend Trend - 052 Kabuki (Brush For Foundation) - Soft, Synthetic Bristles and Wooden Handle</a>
+                        </p>
+                     
+                        <p class="card-cost">₹399
+                            <p class="extra-info">Wand</p>
+                        </p>
+                       
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">999 reviews</label>
+                        </div>
+
+                        <button class="add-cart">add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-3">
+                <div class="card" style="height: 500px; width: 300px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainn3.webp"
+                        alt="Card image cap" style="height: 380px; width: 150px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="text-dark">Vitro MY BEAUTY BUNDLE Skin Care Gift Set For Men & Women | Combo of Toothpaste, Rose Water, Aloe Vera Gel, Aloe Jojoba...</a>
+                        </p>
+                        <p>Combo</p>
+                        <div class="ratings" style="padding-top: 200px;">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">666 reviews</label>
+                        </div>
+
+                        <p class="card-cost">₹699
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainn4.webp"
+                        alt="Card image cap" style="height: 380px; width: 150px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="text-dark">L'Oreal Paris Skin Perfect 30+ Facial Foam, 50g...</a></p>
+                        <p>Foam</p>
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">754 reviews</label>
+                        </div>
+
+                        <p class="card-cost">₹88
+                            
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainn3.webp"
+                        alt="Card image cap" style="height: 300px; width: 200px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">Vitro MY BEAUTY BUNDLE Skin Care Gift Set For Men & Women | Combo of Toothpaste, Rose Water, Aloe Vera Gel, Aloe Jojoba...</a>
+                        </p>
+                        
+                        <p class="card-cost">₹699
+                            
+                        </p>
+                        <p class="extra-info">Combo</p>
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">666 reviews</label>
+                        </div>
+
+                        <button class="add-cart">add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainn4.webp"
+                        alt="Card image cap" style="height: 380px; width: 150px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">L'Oreal Paris Skin Perfect 30+ Facial Foam, 50g...</a></p>
+                         <p class="card-cost">₹88
+                            
+                        </p>
+                        <p class="extra-info">Foam</p>
+                       
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">754 reviews</label>
+                        </div>
+
+                        <button class="add-cart">add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container cardItem" id="recommend">
+        <!-- <div id="heading">
+            <h2>Formal shoes</h2>
+            <button type="button" class="btn btn-outline-primary" id="float">See all</button>
+        </div> -->
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainn5.webp"
+                        alt="Card image cap" style="height: 380px; width: 150px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">Cosmac waterproof makeup combo kit Foundation,Primer,Eyeliner,Mascara,Eyebrow Pencil,Kajal,Red edition</a></p>
+                        <p class="card-cost">₹1499
+                            <p class="extra-info">Matte</p>
+                        
+                        </p>
+                       
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">1,256 reviews</label>
+                        </div>
+
+                        <button class="add-cart">add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainn6.webp"
+                        alt="Card image cap" style="height: 380px; width: 150px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">Maybelline New York Color Sensational Creamy Matte Lipstick, 695 Divine Wine, 3.9g.</a>
+                        </p>
+                        <p class="card-cost">₹194
+                            
+                        </p>
+                        <p class="extra-info">Stick</p>
+                        
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">854 reviews</label>
+                        </div>
+
+                        <button class="add-cart">add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainn7.webp"
+                        alt="Card image cap" style="height: 380px; width: 150px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">Lakme 9 To 5 Complexion Care Face CC Cream, Beige, SPF 30, Conceals Dark Spots & Blemishes, 30 g</a>
+                        </p>
+                        <p class="card-cost">₹247
+                            
+                        </p>
+                        <p class="extra-info">Cream</p>
+                       
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">734 reviews</label>
+                        </div>
+
+                        <button class="add-cart">add to cart</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="height: 600px; width: 250px;align-self: center; ">
+                    <img class="card-img-top img-fluid"
+                        src="./images/cosmainn8.webp"
+                        alt="Card image cap" style="height: 300px; width: 100px;padding-top: 25px;align-self: center;">
+                    <div class="card-body">
+                        <p class="card-text"><a href="inner-productpage.html" class="destext">Belora Paris Long Stay Matte Liquid Lipstick I Leave No Evidence - Transferproof I Vegan I Paraben free - 10 Ruby crush (Pure Red)</a></p>
+                       
+                        <p class="card-cost">₹539</p>
+                        <p class="extra-info">Liquid</p>
+
+                        <div class="ratings">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-secondary"></i>
+                            <label class="text-secondary ml-3 "style="padding-top: 11px;">1,234 reviews</label>
+                        </div>
+
+                        <button class="add-cart">add to cart</button>
+
+                            
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="container cardItem" id="brands">
+        <h2>Our Brands</h2>
+        <br>
+        <div class="row">
+            <div class="card">
+                <img class="card-img-top img-fluid"
+                    src="./images/cosbrand4.png" width="20%"
+                    style="padding: 0 35px;align-self: center; padding-top: 20px;">
+                <!-- <hr> -->
+                <!-- <div class="card-body">
+                    <p class="card-text">36 Products</p>
+                </div> -->
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid"
+                    src="./images/cosbrand5.png" width="20%"
+                    style="padding: 5 25px;padding-top: 10px;align-self: center;">
+                <!-- <hr> -->
+                <!-- <div class="card-body">
+                    <p class="card-text">980 Products</p>
+                </div> -->
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid"
+                    src="./images/cosbrand1.png" width="40%" height="60%"
+                    style="padding: 20 35px; padding-top: 25px;">
+                <!-- <hr> -->
+                <!-- <div class="card-body">
+                    <p class="card-text">25 Products</p>
+                </div> -->
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid"
+                    src="./images/cosbrand2.webp" width="20%"
+                    style="padding: 0 35px; padding-top: 25px;width: 1000px;">
+                <!-- <hr> -->
+                <!-- <div class="card-body">
+                    <p class="card-text">72 Products</p>
+                </div> -->
+            </div>
+            <div class="card">
+                <img class="card-img-top img-fluid"
+                    src="./images/cosbrand3.jpg" width="20%"
+                    style="padding: 0 55px; width: 500px;align-self: center;">
+                <!-- <hr> -->
+                <!-- <div class="card-body">
+                    <p class="card-text">41 Products</p>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container cardItem" id="appStore">
+        <h2>Download app demo text</h2>
+        <br>
+        <div class="row">
+            <img class="mt-3 ml-1.5"
+                src="./images/WhatsApp Image 2022-04-05 at 20.15.34.jpeg" width="10%" alt="App Store"
+                height="20%">
+            <img class="mt-1"
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                alt="Play Store" height="120px" style="padding-top: 20px; padding-left: 35px;">
+        </div>
+    </div>
+    <br>
+    <footer>
+        <br><br>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>Company</h5>
+              <ul>
+                <li><a href="">Makeup-hub</a></li>
+              </ul>
+            </div>
+    
+            <div class="col-md-3">
+              <h5>Help</h5>
+              <ul>
+                <li><a href="">mohdaffwanmohd@gmail.com</a></li>
+                <li><a href="">70133 22781</a></li>
+              </ul>
+            </div>
+    
+            <div class="col-md-3">
+              <h5>Account</h5>
+              <ul>
+                <li><a href="#">Makeup-hub</a></li>
+                <li><a href="#">Makeup-hubinida</a></li>
+                <li><a href="#">Makeup-hubhyd</a></li>
+              </ul>
+            </div>
+    
+            <div class="col-md-3">
+              <h5>Social</h5>
+              <ul>
+                  <li><a href="#"><i class="fab fa-facebook"></i>  Facebook</a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                  <li><a href="https://instagram.com/mr_affwan_01?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i>  Instagram</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer pt-5 pb-5" id="footer">
+        <div class="container">
+          <span class="text-muted float-left"><p id="copyright">&copy; 2019 Makeup-hub</p></span>
+          <span class="float-right"> <p id="footerInfo"> mohdaffwanmohd@gmail.com |  70133 22781 |</p> </span>
+        </div>
+      </footer>
+    <footer class="footer pt-5 pb-5" id="footer">
+        <div class="container">
+       
+           
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <h5 class="modal-title text-light" id="exampleModalCenterTitle">Login</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body bg-light">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter Your Email">
+                            <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone
+                                else!</small>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Keep me Logined</label>
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-sm"><a href="profile.html"
+                                class="text-light">Login</a></button>
+                        <a href="register.html" class="float-right text-muted">Not a Member? Register</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen width='100%' " >
+          <div class="modal-content">
+            <div class="modal-header bg-dark ">
+              <h5 class="modal-title text-light" id="exampleModalCenterTitle" width="100 %> ">CART</h5>
+              <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body bg-light" >
+      <div class="uk-table uk-table-hover uk-table-middle uk-table-divider">
+     <table class="table table-borderless pt-2">
+             <thead>
+               <tr>
+                   <th class="uk-table-shrink"></th>
+                   <th class="uk-width-small sty">ITEM</th>
+                 <th class="uk-table-small"></th>
+                 <th class="uk-width-small sty">PRICE</th>
+                 <th class="uk-table-shrink uk-text-small sty" >Quantity</th>
+                 <th class="uk-table-shrink uk-text-small sty" >TOTAL</th>
+
+               </tr>
+             </thead>
+        <tbody>
+          <tr>
+            
+              
+             <!-- <td><input class="uk-checkbox" type="checkbox"></td>
+            <td><img class="uk-preserve-width uk-border-circle" src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/13a.jpg" width="70px"></td>
+            <td class="uk-table-link">
+              <h3 class="item-name">redddd</h3>
+              
+            </td>  
+               <td class="uk-text-truncate card-cost"><h3>5430</h3></td>
+           <td>    <input type="number" class="num" value="1"></td>
+
+
+               <td class="uk-text-truncate total-price"><h3>5430</h3></td>
+               <td><button class="uk-button uk-button-danger"  type="button" id="remove">Remove</button></td>---->
+          </tr>
+              
+     </tbody>
+     <tr >
+<td><input class="uk-checkbox" type="checkbox"></td>
+<td><img class="uk-preserve-width uk-border-circle" width="40" alt=""></td>
+<td class="uk-table-link">
+<h3 class="itemName"><strong>GRAND TOTAL</strong></h3></td>
+
+<td class="uk-text-truncate"><h3></h3></td>
+<td class="uk-text-truncate"><h3></h3></td>
+<td class="uk-text-truncate grand-total " id="table-content"><h3>₹0</h3></td>
+
+
+</tr>
+
+</table>
+<hr>
+<button class="btn btn-primary mt-2" id="proceedpay"><a href="checkout.html" class="text-white"><i class="fas fa-shopping-bag pr-2"></i>Proceed to Checkout</a></button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
+</html>
