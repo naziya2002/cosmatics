@@ -120,13 +120,13 @@
                       <h4 class="pb-4">Login</h4>
                       <form>
                           <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
                           </div>
                           <div class="form-group">
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <input type="password" class="form-control" id="password" placeholder="Password">
                           </div>
                          <br>
-                          <button type="submit" class="btn btn-sm "><a href="#" class="text-light">Login</a></button>
+                          <button type="submit" class="btn btn-sm " id="signIn">Login</button>
                           <a href="register.html" class="float-right ">Not a Member? Register</a>
                         </form>
                   </div>
@@ -219,17 +219,17 @@
               <div class="modal-body bg-light">
                 <form>
                   <div class="form-group">
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Your Email">
+                    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Enter Your Email">
                     <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else!</small>
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <input type="password" class="form-control" id="password1" placeholder="Password">
                   </div>
                   <div class="form-group form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Keep me Logined</label>
                   </div>
-                  <button type="submit" class="btn btn-secondary btn-sm text-light" id="logIn"><a href="profile.html" class="text-light">Login</a></button>
+                  <button type="submit" class="btn btn-secondary btn-sm text-light" >Login</button>
                   <a href="register.html" class="float-right text-muted">Not a Member? Register</a>
                 </form>
               </div>
@@ -241,13 +241,18 @@
 
 
 
+
+
+
       <script type="module">
         // Import the functions you need from the SDKs you need
         
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
         import { getDatabase } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
         import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
-          import { getAuth, onAuthStateChanged, signInWithEmailAndPassword,signOut } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+        import { getAuth, onAuthStateChanged, signInWithEmailAndPassword,signOut } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+         
+         
           const firebaseConfig = {
             apiKey: "AIzaSyC2l3-7JzhjyndEA_qz2pdMQm6mFErwADI",
             authDomain: "makeup-hub-88870.firebaseapp.com",
@@ -266,10 +271,11 @@ const database=getDatabase(app);
 const auth = getAuth();
 
 
-logIn.addEventListener('click',(e)=>{
+signIn.addEventListener('click',(e)=>{
   e.preventDefault();
    var email=document.getElementById('email').value;
    var password=document.getElementById('password').value;
+
    
 
 signInWithEmailAndPassword(auth, email, password).catch((error) => {
@@ -285,7 +291,7 @@ if (user){
   
   
 }
-window.location.href="main.html"
+window.location.href="cosmmain.html"
 
 });
 })
